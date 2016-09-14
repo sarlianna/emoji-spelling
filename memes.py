@@ -230,7 +230,6 @@ def main(string, bitmap, mask=False, emoji=None):
         return result
     bit_result = list(map(convert_to_str, bit_result))
     result = "\n".join(bit_result)
-    print(result)
     return result
 
 
@@ -249,4 +248,5 @@ if __name__ == "__main__":
     parser.add_argument("--bitmap", help="ignored.")
     args = parser.parse_args()
     values = [args.space, args.filled, args.filled2, args.filled3, args.filled4]
-    main(args.text, LETTER_BITMAPS_5, args.multipart, values)
+    result = main(args.text, LETTER_BITMAPS_5, args.multipart, values)
+    print(result)
