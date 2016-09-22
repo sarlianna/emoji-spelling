@@ -243,7 +243,7 @@ if __name__ == "__main__":
     parser.add_argument("-f3", "--filled3", help="a third text value to put for a filled 'pixel'", default=None)
     parser.add_argument("-f4", "--filled4", help="a fourth text value to put for a filled 'pixel'", default=None)
     parser.add_argument("--mp-pattern", default="[[1, 2, 1, 2, 1], [3, 4, 3, 4, 3], [1, 2, 1, 2, 1], [3, 4, 3, 4, 3], [1, 2, 1, 2, 1]]",
-                            help="""Multipart value pattern that bitmasks mask over.  Can contain 0-4, where 0 corresponds to --space, and 1-4 to -f through -f4. 
+                            help="""Multipart value pattern that bitmasks mask over.  Can contain 0-4, where 0 corresponds to --space, and 1-4 to -f through -f4.
                             Is expected to be a list of lists that is large enough for all bitmaps to cover.""")
     parser.add_argument("--bitmap", help="ignored.")
     args = parser.parse_args()
